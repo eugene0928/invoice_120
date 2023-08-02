@@ -1,12 +1,15 @@
 import "dotenv/config";
-import express, { urlencoded } from "express";
+import express from "express";
+import { addRouter } from "./router/add.router.js";
 
 async function bootstrapt() {
   try {
     const app = express();
 
-    app.use(urlencoded({ extended: true }));
     app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+
+    app.use("/add", addRouter);
 
     app.listen(process.env["PORT"] || 5000, process.env["HOST"], () =>
       console.log("Server is running...")
