@@ -13,13 +13,14 @@ async function bootstrapt() {
 
     app.use("/add", addRouter);
     app.use(InvoicesRouter)
+    app.use(routerPaid);
+    app.use(routerPanding);
 
     app.listen(process.env["PORT"] || 5000, process.env["HOST"], () =>
       console.log("Server is running...")
     );
   } catch (error) {
     console.log(error.message);
-    
   }
 }
 
