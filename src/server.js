@@ -1,12 +1,18 @@
 import "dotenv/config";
 import express from "express";
-import { routerPaid } from "./router/paid.router.js";
-import { routerPanding } from "./router/panding.router.js";
+import InvoicesRouter from "./router/invoices.router.js";
+
+import { addRouter } from "./router/add.router.js";
 
 async function bootstrapt() {
   try {
-    //checking for pull request from mahmud
     const app = express();
+
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+
+    app.use("/add", addRouter);
+    app.use(InvoicesRouter)
     app.use(routerPaid);
     app.use(routerPanding);
 

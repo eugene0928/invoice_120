@@ -1,0 +1,46 @@
+[
+  {
+    "id": "88af3e4f-5414-4b82-8a91-4eecc167d144",
+    "fullName": "Cristiano Ronaldo",
+    "email": "email@gmail.com",
+    "paid": false,
+    "createdDate": "2023-08-02T19:57:33.058Z",
+    "dueDate": "Thu Aug 03 2023 ",
+    "term": 7,
+    "description": "Muchas gracias afición esto es para vosotros SUUUUUUU",
+    "price": 5200
+  },
+  {
+    "id": "2e284d95-0d25-4ed6-aadc-b238105f948a",
+    "fullName": "Leonel Messi",
+    "email": "gmail@gmail.com",
+    "paid": false,
+    "createdDate": "2023-08-02T20:01:49.766Z",
+    "dueDate": "Fri Apr 12 2000 ",
+    "term": 14,
+    "description": "Qué estás mirando, idiota? Adelante, tonto!",
+    "price": 3980
+  },
+  {
+    "id": "7761cda9-d82d-4b59-9308-d96186fcf81f",
+    "fullName": "Neymar Junior",
+    "email": "neymar@gmail.com",
+    "paid": false,
+    "createdDate": "2023-08-02T20:05:17.970Z",
+    "dueDate": "Mon Mar 23 1989 ",
+    "term": 30,
+    "description": "Ninguém é obrigado a amar ninguém, mas existem coisas como o respeito",
+    "price": 4650
+  },
+  {
+    "id": "7dc7dcbc-8a5d-4d5d-a395-20619f4cfcfc",
+    "fullName": "Kilian Mbappe",
+    "email": "turtle@gmail.com",
+    "paid": false,
+    "createdDate": "2023-08-02T20:07:03.731Z",
+    "dueDate": "Thu Dec 31 1999 ",
+    "term": 21,
+    "description": "ninja turtles ninja turtles ninja turtles ninja turtles",
+    "price": 10000
+  }
+]
