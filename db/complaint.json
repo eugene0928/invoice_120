@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Alex Grim",
+    "status": true
+  },
+  {
+    "name": "Anatoly Grim",
+    "status": false
+  },
+  {
+    "name": "Max",
+    "status": true
+  }
+]
