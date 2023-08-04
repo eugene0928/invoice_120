@@ -1,19 +1,23 @@
 import "dotenv/config";
 import express from "express";
 
+import { addRouter } from "./router/add.router.js";
 
 async function bootstrapt() {
-    try {
-        //checking for pull request from mahmud
-        const app = express();
+  try {
+    const app = express();
 
-        app.listen(process.env["PORT"] || 5000, process.env['HOST'], () => console.log('Server is running...'));
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
 
-    } catch (error) {
+    app.use("/add", addRouter);
 
-        console.log(error.message);
-        
-    }
+    app.listen(process.env["PORT"] || 5000, process.env["HOST"], () =>
+      console.log("Server is running...")
+    );
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 
-bootstrapt()
+bootstrapt();
