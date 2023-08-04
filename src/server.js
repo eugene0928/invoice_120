@@ -19,7 +19,6 @@ async function bootstrapt() {
     );
   } catch (error) {
     console.log(error.message);
-
     
   }
 }
