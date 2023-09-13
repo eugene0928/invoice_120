@@ -20,6 +20,7 @@ async function bootstrapt() {
       console.log("Server is running...")
     );
   } catch (error) {
+    // merging
     console.log(error.message);
   }
 }
